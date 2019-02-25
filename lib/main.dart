@@ -11,6 +11,7 @@ import './demo/navigator_demo.dart';
 import './demo/form_demo.dart';
 import './demo/material-components.dart';
 import './demo/state/state_management_demo.dart';
+import './demo/stream/stream_demo.dart';
 void main(){
   runApp(
     App()
@@ -23,13 +24,14 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home:NavigatorDemo(),
-      initialRoute: '/state-management',
+      initialRoute: '/stream',
       routes: {
         '/': (context) => Home(),
         '/about':(context) =>Page(title: 'About'),
         '/from':(context) =>FormDemo(),
         '/mdc':(context) =>MaterialComponents(),
-        '/state-management':(context) =>StateMangementDemo()
+        '/state-management':(context) =>StateMangementDemo(),
+        '/stream':(context) =>StreamDemo()
       },
       theme: ThemeData(
         primarySwatch: Colors.yellow,

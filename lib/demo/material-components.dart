@@ -13,6 +13,11 @@ import './alert_dialog_demo.dart';
 import './bottom_sheet_demo.dart';
 import './snack_bar_demo.dart';
 import './expansion_panel_demo.dart';
+import './chip_demo.dart';
+import './data_table_demo.dart';
+import './paginated_data_table_demo.dart';
+import './card_demo.dart';
+import './stepper_demo.dart';
 class MaterialComponents extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -37,6 +42,11 @@ class MaterialComponents extends StatelessWidget {
           ListItem(title: 'BottomSheetDemo', page: BottomSheetDemo()),  
           ListItem(title: 'SnackBarDemo', page: SnackBarDemo()), 
           ListItem(title: 'ExpansionPanelDemo', page: ExpansionPanelDemo()), 
+          ListItem(title: 'ChipDemo', page: ChipDemo()), 
+          ListItem(title: 'DataTableDemo', page: DataTableDemo()), 
+          ListItem(title: 'PaginatedDataTableDemo', page: PaginatedDataTableDemo()), 
+          ListItem(title: 'CardDemo', page: CardDemo()), 
+          ListItem(title: 'StepperDemo', page: StepperDemo()), 
         ],
       ),
     );
